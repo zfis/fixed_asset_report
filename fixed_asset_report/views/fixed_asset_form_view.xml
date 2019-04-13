@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Additional fields of Asset Entry in Form View -->
+        <record id="fixed_asset_view_form" model="ir.ui.view">
+            <field name="name">view.fixed.asset.form</field>
+            <field name="model">account.asset.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_asset_form" />
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='date']" position="after">
+                        <field name="asset_code"/>
+                        <field name="manufacturer"/>
+                        <field name="serial_number"/>
+                        <field name="model_number"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+        
+    </data>
+</odoo>
+
