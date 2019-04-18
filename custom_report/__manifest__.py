@@ -9,7 +9,7 @@
         Developed by Jeshad Khan for Metamorphosis Ltd.
     """,
     'icon': "/custom_report/static/description/icon.png",
-    "images": ["static/description/custom report template.png.png"],
+    "images": ["static/description/custom_report_template.png"],
 
     'version': '10.0.1.0',
     'author': 'Metamorphosis',
